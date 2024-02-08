@@ -145,7 +145,7 @@ console.log(lengthOfTheArray);
 document.getElementById("displayLengthOfArray").innerHTML= lengthOfTheArray;
     //Como colocar o array em loop ? a id a ser consultada para innerHTML é loopTheArray
 var arrayValue = "";
-for (1 = 0; i < fruits.length; i++) {
+for (i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
     arrayValue = arrayValue + fruits[i] + "<br>";
 }
@@ -165,20 +165,32 @@ document.getElementById("addMoreElementAtTheEndOfArray").innerHTML = fruits;
     //Como declarar um array com o alfabeto ? a id a ser consultada para innerHTML é displayAlphabetsArray
 var alphabets = ["l" , "a" , "e" , "j" , "b" , "g" , "f" , "h" ,"c" , "d" , "i" , "k"];
 console.log(alphabets);
-document.getElementById("displayAolphbetsArray").innerHTML = alphabets;
+document.getElementById("displayAlphabetsArray").innerHTML = alphabets;
 
     //Como organizar o array com alfabeto ? a id a ser consultada para innerHTML é displaySortedAlphabetsArray
 alphabets.sort();
 console.log(alphabets);
-document.getElementById("displaySortedAolphbetsArray").innerHTML = alphabets;
+document.getElementById("displaySortedAlphabetsArray").innerHTML = alphabets;
 
     //Como reverter o array ? a id a ser consultada para innerHTML é displayReverseArray
+alphabets.reverse();
+console.log(alphabets);
+document.getElementById("displayReverseArray").innerHTML = alphabets;
 
     //Como declarar o array com números ? a id a ser consultada para innerHTML é displayNumberArray
+var numbers = ["45", "4", "9", "16", "25"];
+console.log(numbers);
+document.getElementById("displayNumberArray").innerHTML = numbers;
 
     //Como encontrar o número máximo do array com números ? a id a ser consultada para innerHTML é displayMaximumNumber
+var maximumNumber = Math.max.apply(Math, numbers);
+console.log(maximumNumber);
+document.getElementById("displayMaximumNumber").innerHTML = maximumNumber;
 
     //Como encontrar o número mínimo do array com números ? a id a ser consultada para innerHTML é displayMinimumNumber
+    var minimumNumber = Math.min.apply(Math, numbers);
+console.log(minimumNumber);
+document.getElementById("displayMinimumNumber").innerHTML = minimumNumber;
 
     console.log("ATIVIDADE ADICIONAL");
 
